@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+* {
+  font-family: 'Baloo Bhaina 2', cursive;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+h1,
+.result {
+  text-align: center;
+  margin: 1rem auto;
+}
+.gameContainer {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+}
+.playerContainer,
+.computerContainer {
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 1rem;
+  box-shadow: 0 0 5px;
+  background-color: lightskyblue;
+}
+h2 {
+  text-align: center;
+}
+button {
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  border-radius: 3px;
+  margin: 0 0.5rem;
+  background-color: white;
+  border: 2px solid;
+  transition: all 0.15s ease-in-out;
+}
+.playerBtn {
+  cursor: pointer;
+}
+.compBtn{
+    cursor: not-allowed;
+}
+
+.play {
+  border: 2px solid red;
+  transform: scale(1.1);
+  box-shadow: 0 0 5px red;
+}
+.result{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 3px;
+}
+.reset {
+  margin: auto;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 0 1rem;
+  border-radius: 3px;
+  border: 1px solid;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: tomato;
+    width: 100vw;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+@media (max-width: 770px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 602px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 538px) {
+  html {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width:475px) {
+    html{
+        font-size: 0.5rem;
+    }
+    .gameContainer{
+        flex-direction: column;
+    }
+    .playerContainer,.computerContainer{
+        width: 33rem;
+    }
+    .playerChoice,.compChoice,#playerScore,#compScore,h2{
+        font-size: 2rem;
+    }
+    button,.reset{
+        font-size: 1.5rem;
+    }
+    .result{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+}
+@media (max-width:300px) {
+    .playerContainer,.computerContainer{
+        width: 23rem;
+    }
+}

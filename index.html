@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to Rock, Paper and Scissor game.</h1>
+    <div class="gameContainer">
+      <span class="playerContainer">
+        <h2>Player</h2>
+        <div>
+          <button id="rock" class="playerBtn">Rock</button>
+          <button id="paper" class="playerBtn">Paper</button>
+          <button id="scissor" class="playerBtn">Scissor</button>
+        </div>
+        <p class="playerChoice"></p>
+        <p id="playerScore"></p>
+      </span>
+      <span class="computerContainer">
+        <h2>Computer</h2>
+        <div>
+          <button class="compBtn">Rock</button>
+          <button class="compBtn">Paper</button>
+          <button class="compBtn">Scissor</button>
+        </div>
+        <p class="compChoice"></p>
+        <p id="compScore"></p>
+      </span>
+    </div>
+    <p class="result"></p>
+    <footer>Created by Shehroze Ahmad Khan</footer>
+    <audio id="click" src="sounds/click.mp3"></audio>
+    <audio id="win" src="sounds/win.wav"></audio>
+    <audio id="lost" src="sounds/lost.wav"></audio>
+  </body>
+  <script src="script.js"></script>
+</html>
